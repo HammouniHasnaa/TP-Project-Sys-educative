@@ -7,7 +7,7 @@ import com.example.gestion_educative.classes.Filiere;
 import java.util.ArrayList;
 
 public class Etdservices {
-    public static Etudiant addEtd(String nom, String prenom, String email, int apogee, Enseignant filiere){
+    public static Etudiant addEtd(String nom, String prenom, String email, int apogee, Filiere filiere){
         Etudiant etudiant=new Etudiant();
         etudiant.setNom(nom);
         etudiant.setPrenom(prenom);

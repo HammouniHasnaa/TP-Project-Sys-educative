@@ -50,7 +50,7 @@ public class Etucontrol {
             String email = Main.getStringInput("Entrez l'email' :");
             Enscontrol.showEnseignants();
             int id = Main.getIntInput("Sélecionnez un enseignant par id :");
-            Etdservices.addEtd(nom,prenom,email, BD.etu_id,Ensservices.getEnsById(id));
+            Etdservices.addEtd(nom,prenom,email, BD.etu_id,Filservices.getFiliereById(id));
             showEtd();
             showMenu();
         }
